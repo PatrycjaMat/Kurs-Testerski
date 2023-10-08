@@ -1,0 +1,1310 @@
+{
+	"info": {
+		"_postman_id": "3ad0f164-79be-4cda-913e-57bb88b31226",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createBoard",
+			"id": "9d26f2c8-e618-4553-a201-96d3ee4efd15",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Pierwsza Tablica&key=1dcef2797cd90919ff6bd72aa28fd02e&token=ATTA0b9351c912e594d875e96b78dced367308a353f66b92bbefd1145e8038b800d71863BA6E",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pierwsza Tablica"
+						},
+						{
+							"key": "key",
+							"value": "1dcef2797cd90919ff6bd72aa28fd02e"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0b9351c912e594d875e96b78dced367308a353f66b92bbefd1145e8038b800d71863BA6E"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDoneList",
+			"id": "20306f02-e27e-4fb8-b24a-f12d6f82a797",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6522696fa1d8a9cc4855a286/lists?name=Zrobione&key=1dcef2797cd90919ff6bd72aa28fd02e&token=ATTA0b9351c912e594d875e96b78dced367308a353f66b92bbefd1145e8038b800d71863BA6E",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6522696fa1d8a9cc4855a286",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Zrobione"
+						},
+						{
+							"key": "key",
+							"value": "1dcef2797cd90919ff6bd72aa28fd02e"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0b9351c912e594d875e96b78dced367308a353f66b92bbefd1145e8038b800d71863BA6E"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTestingList",
+			"id": "8aed695d-b824-435a-aa47-326e9cf2f520",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6522696fa1d8a9cc4855a286/lists?name=Testowanie&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6522696fa1d8a9cc4855a286",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Testowanie"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InProgressList",
+			"id": "8040c4cd-0108-40f1-828c-bab59c626cd0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6522696fa1d8a9cc4855a286/lists?name=In Progress&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6522696fa1d8a9cc4855a286",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "In Progress"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoZrobieniaList",
+			"id": "c53a48cd-a2d8-4fd0-9943-685dfaadfcf2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6522696fa1d8a9cc4855a286/lists?name=Do Zrobienia&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6522696fa1d8a9cc4855a286",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Do Zrobienia"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ZadanieDoZrobienia",
+			"id": "271d6197-a067-489d-825e-8d763d841d6c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=652272e16f20e52469a3225b&key={{APIKey}}&token={{APIToken}}&name=Zadanie do zrobienia",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "652272e16f20e52469a3225b"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie do zrobienia",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ZadanieDoInProgress",
+			"id": "0f5ca633-f299-4163-b85e-31e47b803b64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65227263e92307718b521e8c&key={{APIKey}}&token={{APIToken}}&name=Zadanie",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65227263e92307718b521e8c"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ZadanieDoTestowanie",
+			"id": "e328ed83-ca36-4872-bd10-e84a7ed4c877",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65226fa40906bf4f41d9292a&key={{APIKey}}&token={{APIToken}}&name=Zadanie",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65226fa40906bf4f41d9292a"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ZadanieDoZrobione",
+			"id": "0a5c5584-b467-4dbf-ade2-538beef7f8ba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65226bc0b7b76d868f745384&key={{APIKey}}&token={{APIToken}}&name=Zadanie",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65226bc0b7b76d868f745384"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoweDescDoTestowanie",
+			"id": "92c14346-f518-4ae9-99f2-a414e3761d95",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227999aaa4d5e510625deb?key={{APIKey}}&token={{APIToken}}&desc=nowe Description",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227999aaa4d5e510625deb"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "nowe Description"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoweDescDoInprogress",
+			"id": "cf0c5e3a-82f0-422f-8ae8-949cbf436e10",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/652279f53737a8bdfb202436?key={{APIKey}}&token={{APIToken}}&desc=nowe Desciption",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"652279f53737a8bdfb202436"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "nowe Desciption"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoweDescDoZrobione",
+			"id": "5dd54140-3be9-43bb-9bb9-38b721d1558f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227a5276dbc2f9c91c1a29?key={{APIKey}}&token={{APIToken}}&desc=nowe Description",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227a5276dbc2f9c91c1a29"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "nowe Description"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoweDescDoDoZrobienia",
+			"id": "4f598011-b346-4beb-99b0-2e06609695eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6522776f884580f948a88fd5?key={{APIKey}}&token={{APIToken}}&desc=Nowe Description",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6522776f884580f948a88fd5"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "Nowe Description"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateLabelToDo",
+			"id": "2b532f3a-c111-4db0-b7de-89c7b1a939fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/labels?name=TO DO&color=yellow&idBoard=6522696fa1d8a9cc4855a286&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TO DO"
+						},
+						{
+							"key": "color",
+							"value": "yellow"
+						},
+						{
+							"key": "idBoard",
+							"value": "6522696fa1d8a9cc4855a286"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateLabelInProgress",
+			"id": "e8493413-b7e9-45ab-a876-504ece857d8c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/labels?name=In Progress&color=lime&idBoard=6522696fa1d8a9cc4855a286&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "In Progress"
+						},
+						{
+							"key": "color",
+							"value": "lime"
+						},
+						{
+							"key": "idBoard",
+							"value": "6522696fa1d8a9cc4855a286"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateLabelDone",
+			"id": "308d8c93-1a5d-4777-a839-c023855c5d72",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/labels?name=Done&color=pink&idBoard=6522696fa1d8a9cc4855a286&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Done"
+						},
+						{
+							"key": "color",
+							"value": "pink"
+						},
+						{
+							"key": "idBoard",
+							"value": "6522696fa1d8a9cc4855a286"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLabelToDo",
+			"id": "1380e6f2-aae5-43cc-96d3-4f392b34b5db",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6522776f884580f948a88fd5/idLabels?key={{APIKey}}&token={{APIToken}}&value=652289a1bc38edb331eadc36",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6522776f884580f948a88fd5",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "value",
+							"value": "652289a1bc38edb331eadc36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLabelInProgress",
+			"id": "bca1a9d3-9256-4cd2-9b8f-7c4231f76a08",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227999aaa4d5e510625deb/idLabels?key={{APIKey}}&token={{APIToken}}&value=652287c20a38b94bd1da3e95",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227999aaa4d5e510625deb",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "value",
+							"value": "652287c20a38b94bd1da3e95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLabelDone",
+			"id": "97a3e584-6092-4d5d-abe5-5d84a42de370",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227a5276dbc2f9c91c1a29/idLabels?key={{APIKey}}&token={{APIToken}}&value=6522881345c887d31f42eda6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227a5276dbc2f9c91c1a29",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "value",
+							"value": "6522881345c887d31f42eda6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTestowanieLabel",
+			"id": "7cb8b2b9-7289-41b6-9c1b-98b3887b02a2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/labels?name=Testowanie&color=blue&idBoard=6522696fa1d8a9cc4855a286&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Testowanie"
+						},
+						{
+							"key": "color",
+							"value": "blue"
+						},
+						{
+							"key": "idBoard",
+							"value": "6522696fa1d8a9cc4855a286"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTestowanieLabel",
+			"id": "ce865a04-4f28-47fb-b8e5-889b5f6fe493",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/652279f53737a8bdfb202436/idLabels?key={{APIKey}}&token={{APIToken}}&value=65228ed365ca453a9b6f039a",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"652279f53737a8bdfb202436",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "value",
+							"value": "65228ed365ca453a9b6f039a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDescriptionToABoard",
+			"id": "eb4b67c6-dfad-4b32-9f15-3db73be9bf57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6522696fa1d8a9cc4855a286?key={{APIKey}}&token={{APIToken}}&desc=Description to a board",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6522696fa1d8a9cc4855a286"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "Description to a board"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCommentDoDoZrobienia",
+			"id": "8b1476ea-346e-4cf3-96d8-408705f1c6a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6522776f884580f948a88fd5/actions/comments?text=komentarz do zrobienia&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6522776f884580f948a88fd5",
+						"actions",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "komentarz do zrobienia"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddKomentarzDoInProgress",
+			"id": "ddd2eff2-68f8-4c0a-8eb9-4eed667c584a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227999aaa4d5e510625deb/actions/comments?text=komentarz do In Progress&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227999aaa4d5e510625deb",
+						"actions",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "komentarz do In Progress"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddKomentarzDoTestowanie",
+			"id": "55809312-7aae-4cf8-aa7c-6eb13600beae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/652279f53737a8bdfb202436/actions/comments?text=Komentarz do Testowanie&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"652279f53737a8bdfb202436",
+						"actions",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Komentarz do Testowanie"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChecklistaDoZrobienia",
+			"id": "c18e0c4a-e417-4278-a084-8900d7aea709",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6522776f884580f948a88fd5/checklists?key={{APIKey}}&token={{APIToken}}&name=checklista do zrobienia",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6522776f884580f948a88fd5",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "checklista do zrobienia",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckItemDoChecklistyDoZrobienia",
+			"id": "dd904036-1472-466d-93d1-643217facce7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/65229e2a8b81eb87fe68ef37/checkItems?name=Item Checklisty Do Zrobienia&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"65229e2a8b81eb87fe68ef37",
+						"checkItems"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Item Checklisty Do Zrobienia"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChecklistaDoInProgress",
+			"id": "1b4f5a33-0736-4094-b563-c88760f6d0ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?idCard=65227999aaa4d5e510625deb&key={{APIKey}}&token={{APIToken}}&name=Checklista do In Progress",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "idCard",
+							"value": "65227999aaa4d5e510625deb"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Checklista do In Progress",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckItemNaCheckliscieInProgress",
+			"id": "7aa188e9-0c36-4f43-984b-10d620c8515f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/6522a07e7016d1a77bc32bd4/checkItems?name=Check Item na In Progress&key={{APIKey}}&token={{APIToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"6522a07e7016d1a77bc32bd4",
+						"checkItems"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Check Item na In Progress"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
