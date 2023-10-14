@@ -1,1 +1,1 @@
-Pierwszy plik readme
+InteliJ
